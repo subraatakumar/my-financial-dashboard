@@ -20,25 +20,25 @@ npm install -g firebase-tools
 
 ## Steps to Deploy Your React App
 
-- Initialize Firebase in Your Project:
+1. Initialize Firebase in Your Project:
 
-- Open your terminal and navigate to your React project folder.
-- Run the following command to log in to Firebase:
+  - Open your terminal and navigate to your React project folder.
+  - Run the following command to log in to Firebase:
 ```bash
 firebase login
 ```
-- Then initialize Firebase in your project:
+  - Then initialize Firebase in your project:
 ```bash
 firebase init
 ```
 
-- During the initialization:
-  - Select Hosting from the list of features.
-  - Choose an existing Firebase project or create a new one in the Firebase console.
-  - Specify the public directory. For a typical vite React app, this is dist.
-  - Choose to configure it as a single-page app (SPA) if prompted.
+  - During the initialization:
+    - Select Hosting from the list of features.
+    - Choose an existing Firebase project or create a new one in the Firebase console.
+    - Specify the public directory. For a typical vite React app, this is dist.
+    - Choose to configure it as a single-page app (SPA) if prompted.
 
-- Build Your React App:
+2. Build Your React App:
   - Before deploying, you need to build your app. Run the following command in your project folder:
 
 ```bash
@@ -47,15 +47,18 @@ npm run build
 
 - This command creates a build folder containing the optimized production build of your app.
 
-- Deploy to Firebase:
+3. Deploy to Firebase:
+
   - Now you’re ready to deploy. Run:
+    
 ```bash
 firebase deploy
 ```
 
   - After the deployment, you will receive a hosting URL where your app is now live.
 
-- Access Your Deployed App:
+4. Access Your Deployed App:
+   
   - You can visit the URL provided after the deploy command to see your live application.
 
 ## Additional Configuration
