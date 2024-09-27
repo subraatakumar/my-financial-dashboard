@@ -25,7 +25,7 @@ const FinancialEntryList: React.FC = () => {
         <Text>No entries available.</Text>
       ) : (
         <VStack spacing={4} align="stretch">
-          {financialEntries.map((entry: FinancialEntry) => (
+          {financialEntries.map((entry) => (
             <Box
               key={entry.id}
               p={3}

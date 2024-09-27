@@ -13,12 +13,12 @@ import { addFinancialEntry } from "../redux/slices/financialDataSlice";
 import { AppDispatch } from "../redux/store";
 
 // Define the enum for entry types
-enum EntryType {
+export enum EntryType {
   INCOME = "Income",
   EXPENSE = "Expense",
 }
 
-interface FinancialEntry {
+export interface FinancialEntry {
   id: number;
   type: EntryType;
   amount: number;
